@@ -11,7 +11,8 @@ object ApplicationBuild extends Build {
       javaCore,
       javaJdbc,
       javaJpa,
-      "org.hibernate" % "hibernate-entitymanager" % "3.6.9.Final"
+      "org.hibernate" % "hibernate-entitymanager" % "3.6.9.Final",
+      "mysql" % "mysql-connector-java" % "5.1.18"
     )
 
     val main = play.Project(appName, appVersion, appDependencies).settings(

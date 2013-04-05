@@ -12,11 +12,10 @@ import play.db.jpa.*;
  * Computer entity managed by JPA
  */
 @Entity 
-@SequenceGenerator(name = "computer_seq", sequenceName = "computer_seq")
 public class Computer {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "computer_seq")
+    @GeneratedValue
     public Long id;
     
     @Constraints.Required

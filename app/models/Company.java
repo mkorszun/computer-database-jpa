@@ -15,6 +15,7 @@ import play.db.jpa.*;
 public class Company {
 
     @Id
+    @GeneratedValue
     public Long id;
     
     @Constraints.Required
